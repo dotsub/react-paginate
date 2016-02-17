@@ -78,8 +78,14 @@ export default class PaginationListView extends Component {
     }
 
     return (
-      <ul className={this.props.subContainerClassName}>
+      <ul className={this.props.containerClassName}>
+        <li onClick={this.props.onPreviousPage} className={this.props.previousClass}>
+          <a href="">{this.props.previousLabel}</a>
+        </li>
         {createFragment(items)}
+        <li onClick={this.props.onNextPage} className={this.props.nextClass}>
+          <a href="" >{this.props.nextLabel}</a>
+        </li>
       </ul>
     );
   }

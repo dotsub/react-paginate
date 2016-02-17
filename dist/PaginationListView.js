@@ -106,8 +106,26 @@ var PaginationListView = function (_Component) {
 
       return _react2.default.createElement(
         'ul',
-        { className: this.props.subContainerClassName },
-        (0, _reactAddonsCreateFragment2.default)(items)
+        { className: this.props.containerClassName },
+        _react2.default.createElement(
+          'li',
+          { onClick: this.props.onPreviousPage, className: this.props.previousClass },
+          _react2.default.createElement(
+            'a',
+            { href: '' },
+            this.props.previousLabel
+          )
+        ),
+        (0, _reactAddonsCreateFragment2.default)(items),
+        _react2.default.createElement(
+          'li',
+          { onClick: this.props.onNextPage, className: this.props.nextClass },
+          _react2.default.createElement(
+            'a',
+            { href: '' },
+            this.props.nextLabel
+          )
+        )
       );
     }
   }]);

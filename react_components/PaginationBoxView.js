@@ -98,30 +98,26 @@ export default class PaginationBoxView extends Component {
                                    {disabled: this.state.selected === this.props.pageNum - 1});
 
     return (
-      <ul className={this.props.containerClassName}>
-        <li onClick={this.handlePreviousPage} className={previousClasses}>
-          <a href="" className={this.props.previousLinkClassName}>{this.props.previousLabel}</a>
-        </li>
+      <PaginationListView
+        onPreviousPage={this.handlePreviousPage}
+        onNextPage={this.handleNextPage}
+        containerClassName={this.props.containerClassName}
+        previousLabel={this.props.previousLabel}
+        nextLabel={this.props.nextLabel}
+        previousClass={previousClasses}
+        nextClass={nextClasses}
 
-        <li>
-          <PaginationListView
-            onPageSelected={this.handlePageSelected}
-            selected={this.state.selected}
-            pageNum={this.props.pageNum}
-            pageRangeDisplayed={this.props.pageRangeDisplayed}
-            marginPagesDisplayed={this.props.marginPagesDisplayed}
-            breakLabel={this.props.breakLabel}
-            subContainerClassName={this.props.subContainerClassName}
-            pageClassName={this.props.pageClassName}
-            pageLinkClassName={this.props.pageLinkClassName}
-            activeClassName={this.props.activeClassName}
-            disabledClassName={this.props.disabledClassName} />
-        </li>
-
-        <li onClick={this.handleNextPage} className={nextClasses}>
-          <a href="" className={this.props.nextLinkClassName}>{this.props.nextLabel}</a>
-        </li>
-      </ul>
+        onPageSelected={this.handlePageSelected}
+        selected={this.state.selected}
+        pageNum={this.props.pageNum}
+        pageRangeDisplayed={this.props.pageRangeDisplayed}
+        marginPagesDisplayed={this.props.marginPagesDisplayed}
+        breakLabel={this.props.breakLabel}
+        subContainerClassName={this.props.subContainerClassName}
+        pageClassName={this.props.pageClassName}
+        pageLinkClassName={this.props.pageLinkClassName}
+        activeClassName={this.props.activeClassName}
+        disabledClassName={this.props.disabledClassName} />
     );
   }
 
