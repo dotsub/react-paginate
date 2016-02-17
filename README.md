@@ -25,6 +25,23 @@ For [CommonJS](http://wiki.commonjs.org/wiki/CommonJS) users:
 import ReactPaginate from 'react-paginate';
 ```
 
+## What's it look like?
+
+```javascript
+<ReactPaginate previousLabel={"Previous"}
+   previousClassName={"pagination-prev"}
+   nextLabel={"Next"}
+   nextClassName={"pagination-next"}
+   breakLabel={<li className="break"><a href="">...</a></li>}
+   pageNum={this.props.totalPages}
+   marginPagesDisplayed={2}
+   pageRangeDisplayed={8}
+   clickCallback={this.handlePageClick}
+   containerClassName={"pagination"}
+   activeClassName={"active"} />
+
+```
+
 Read the code of [demo/js/demo.js][1]. You will quickly understand
 how to make `react-paginate` work with a list of objects.
 
