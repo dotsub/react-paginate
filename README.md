@@ -1,5 +1,4 @@
-# react-paginate
-[![Build Status](https://travis-ci.org/AdeleD/react-paginate.svg?branch=master)](https://travis-ci.org/AdeleD/react-paginate)
+# react-paginate-single-ul
 
 **A ReactJS component to render a pagination.**
 
@@ -13,16 +12,16 @@ or
 
 ## Installation
 
-Install `react-paginate` with [npm](https://www.npmjs.com/):
+Install `react-paginate-single-ul` with [npm](https://www.npmjs.com/):
 
 ```
-$ npm install react-paginate
+$ npm install react-paginate-single-ul
 ```
 
 For [CommonJS](http://wiki.commonjs.org/wiki/CommonJS) users:
 
 ```javascript
-import ReactPaginate from 'react-paginate';
+import ReactPaginate from 'react-paginate-single-ul';
 ```
 
 ## What's it look like?
@@ -43,14 +42,14 @@ import ReactPaginate from 'react-paginate';
 ```
 
 Read the code of [demo/js/demo.js][1]. You will quickly understand
-how to make `react-paginate` work with a list of objects.
+how to make `react-paginate-single-ul` work with a list of objects.
 
 ## Demo
 
 Clone the repository and move into:
 
 ```console
-$ git clone git@github.com:AdeleD/react-paginate.git
+$ git clone git@github.com:dotsub/react-paginate.git
 $ cd react-paginate
 ```
 
@@ -102,7 +101,7 @@ Open your browser and go to `http://localhost:3000/`.
 
 ## Contribute
 
-1. [Submit an issue](https://github.com/AdeleD/react-paginate/issues)
+1. [Submit an issue](https://github.com/dotsub/react-paginate/issues)
 2. Fork the repository
 3. Create a dedicated branch (never ever work in `master`)
 4. The first time, run command: `webpack` into the directory
@@ -116,4 +115,4 @@ Run tests:
 $ make test
 ```
 
-[1]: https://github.com/AdeleD/react-paginate/blob/master/demo/js/demo.js
+[1]: https://github.com/dotsub/react-paginate/blob/master/demo/js/demo.js

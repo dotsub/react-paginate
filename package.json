@@ -1,8 +1,9 @@
 {
   "name": "react-paginate-single-ul",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A React component that creates a pagination, using a single unordered list.",
   "main": "./dist/index.js",
+  ""
   "repository": {
     "type": "git",
     "url": "https://github.com/dotsub/react-paginate"
@@ -13,7 +14,12 @@
     "paginator",
     "pagination"
   ],
-  "author": "Francesco Benetti",
+  "author": "",
+  "contributors": [
+    {"name": "Adèle Delamarche"},
+    {"name": "Francesco Benetti"}
+  ],
+  "author": "Francesco Benetti <francesco.benetti@dotsub.com> (http://github.com/fbnt)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dotsub/react-paginate/issues"
