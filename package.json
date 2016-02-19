@@ -3,7 +3,6 @@
   "version": "0.0.3",
   "description": "A React component that creates a pagination, using a single unordered list.",
   "main": "./dist/index.js",
-  ""
   "repository": {
     "type": "git",
     "url": "https://github.com/dotsub/react-paginate"
